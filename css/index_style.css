@@ -3,16 +3,27 @@ body{
     color:white;
     margin:25px;
 }
+:root {
+    --main-color:#1c2541;
+    --stuff-color:#0b132b;
+    --light-color:#3a506b;
+    --edge-color:#fca311;
+    --margin-size:8px;
+}
 .title{
     font-family:fantasy;
     display:flex;
     justify-content: center;
     align-items:center;
-    background-color:#1c2541;
+    background-color:var(--main-color);
     height:50px;
     max-width: 800px;
     margin: 0 auto;
     letter-spacing:13px;
+    transition: color 1s;
+}
+.title:hover{
+    color:var(--main-color);
 }
 .divider{
     max-width: 800px;
@@ -26,11 +37,11 @@ body{
 }
 .center{
     width:50%;
-    margin-left:6px;
+    margin-left:var(--margin-size);
 }
 .right{
     width:30%;
-    margin-left:6px;
+    margin-left:var(--margin-size);
 }
 .border{
     display:flex;
@@ -38,21 +49,21 @@ body{
     padding:3px;
     border-style: outset;
     border-width: 4px;
-    background:#1c2541;
-    border-color:#3a506b;
-    margin-top:8px;
+    background:var(--main-color);
+    border-color:var(--light-color);
+    margin-top:var(--margin-size);
 }
 .stuff{
     padding:25px;
-    background:#0b132b;
+    background:var(--stuff-color);
 }
 .edge{
     max-width: 800px;
     margin: 0 auto;
-    margin-top:6px;
+    margin-top:var(--margin-size);
     display:flex;
     justify-content:center;
     border-style:solid;
     border-width: 4px;
-    color:#1c2541;
+    color:var(--main-color);
 }
