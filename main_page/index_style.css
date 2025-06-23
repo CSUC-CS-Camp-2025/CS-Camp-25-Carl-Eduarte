@@ -19,6 +19,9 @@ a:visited, a:hover{
 li::marker{
     color:var(--edge-color);
 }
+ul{
+    margin-left: -15px;
+}
 .title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display:flex;
