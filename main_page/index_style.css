@@ -9,6 +9,7 @@ body{
     --light-color:#3a506b;
     --edge-color:#fca311;
     --margin-size:8px;
+    --max-width:1000px;
 }
 a:link, a:hover{
     color:white;
@@ -22,6 +23,14 @@ li::marker{
 ul{
     margin-left: -15px;
 }
+.posters{
+    width:160px;
+    height:240px;
+}
+.albums{
+    width:160px;
+    height:160px;
+}
 .title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display:flex;
@@ -29,7 +38,7 @@ ul{
     align-items:center;
     background-color:var(--main-color);
     height:50px;
-    max-width: 800px;
+    max-width: var(--max-width);
     margin: 0 auto;
     letter-spacing:13px;
     transition: color 1s;
@@ -38,21 +47,21 @@ ul{
     color:var(--main-color);
 }
 .divider{
-    max-width: 800px;
+    max-width: var(--max-width);
     margin: 0 auto;
 }
 .box{
     display: flex;
 }
 .left{
-    width:20%;
+    width:15%;
 }
 .center{
-    width:50%;
+    width:60%;
     margin-left:var(--margin-size);
 }
 .right{
-    width:30%;
+    width:25%;
     margin-left:var(--margin-size);
 }
 .border{
@@ -70,7 +79,7 @@ ul{
     background:var(--stuff-color);
 }
 .edge{
-    max-width: 800px;
+    max-width: var(--max-width);
     margin: 0 auto;
     margin-top:var(--margin-size);
     display:flex;
