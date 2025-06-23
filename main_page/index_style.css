@@ -10,8 +10,17 @@ body{
     --edge-color:#fca311;
     --margin-size:8px;
 }
+a:link, a:hover{
+    color:white;
+}
+a:visited, a:hover{
+    color:var(--light-color);
+}
+li::marker{
+    color:var(--edge-color);
+}
 .title{
-    font-family:fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display:flex;
     justify-content: center;
     align-items:center;
